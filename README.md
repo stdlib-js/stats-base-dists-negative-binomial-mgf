@@ -69,13 +69,18 @@ where `r > 0` is the number of failures until the experiment is stopped and `0 <
 ## Usage
 
 ```javascript
+import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-negative-binomial-mgf/tags). For example,
+
+```javascript
 import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@v0.1.0-deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@deno/mod.js';
 ```
 
 #### mgf( t, r, p )
@@ -176,7 +181,7 @@ y = myMGF( 0.4 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@v0.1.0-deno/mod.js';
+import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@deno/mod.js';
 
 var p;
 var r;
