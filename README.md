@@ -69,13 +69,13 @@ where `r > 0` is the number of failures until the experiment is stopped and `0 <
 ## Usage
 
 ```javascript
-import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@deno/mod.js';
+import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@v0.2.0-deno/mod.js';
 ```
 
 #### mgf( t, r, p )
@@ -176,7 +176,7 @@ y = myMGF( 0.4 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@deno/mod.js';
+import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-negative-binomial-mgf@v0.2.0-deno/mod.js';
 
 var p;
 var r;
