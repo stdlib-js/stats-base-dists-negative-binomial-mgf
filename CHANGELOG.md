@@ -4,15 +4,25 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-25)
+## Unreleased (2025-04-30)
+
+<section class="features">
+
+### Features
+
+-   [`b9213a5`](https://github.com/stdlib-js/stdlib/commit/b9213a5ab818bb8099943d79b91e0637a260f50c) - **stats:** add C implementation for `stats/base/dists/negative-binomial/mgf` [(#4771)](https://github.com/stdlib-js/stdlib/pull/4771)
+
+</section>
+
+<!-- /.features -->
 
 <section class="issues">
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#4980](https://github.com/stdlib-js/stdlib/issues/4980)
+[#3764](https://github.com/stdlib-js/stdlib/issues/3764), [#4980](https://github.com/stdlib-js/stdlib/issues/4980)
 
 </section>
 
@@ -24,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`b9213a5`](https://github.com/stdlib-js/stdlib/commit/b9213a5ab818bb8099943d79b91e0637a260f50c) - **feat(stats):** add C implementation for `stats/base/dists/negative-binomial/mgf` [(#4771)](https://github.com/stdlib-js/stdlib/pull/4771) _(by Karan Anand, Philipp Burckhardt, stdlib-bot)_
 -   [`366925e`](https://github.com/stdlib-js/stdlib/commit/366925e14f08852288d1422041d5613c1aaddb28) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`39f6970`](https://github.com/stdlib-js/stdlib/commit/39f69705826500421b402f732d6a16e204f54dca) - **bench:** refactor random number generation in `stats/base/dists/negative-binomial` [(#5193)](https://github.com/stdlib-js/stdlib/pull/5193) _(by GK Bishnoi)_
 
@@ -37,9 +48,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   GK Bishnoi
+-   Karan Anand
 -   Philipp Burckhardt
 
 </section>

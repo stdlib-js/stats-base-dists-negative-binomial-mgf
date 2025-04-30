@@ -1,44 +1,7 @@
+"use strict";var a=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var s=a(function(b,o){
+var n=require('@stdlib/math-base-assert-is-nan/dist'),t=require('@stdlib/math-base-special-exp/dist'),x=require('@stdlib/math-base-special-pow/dist'),y=require('@stdlib/math-base-special-ln/dist');function l(e,r,i){return n(e)||n(r)||n(i)||r<=0||i<0||i>1||e>=-y(i)?NaN:x((1-i)*t(e)/(1-i*t(e)),r)}o.exports=l
+});var f=a(function(h,c){
+var m=require('@stdlib/utils-constant-function/dist'),q=require('@stdlib/math-base-assert-is-nan/dist'),v=require('@stdlib/math-base-special-exp/dist'),g=require('@stdlib/math-base-special-pow/dist'),w=require('@stdlib/math-base-special-ln/dist');function d(e,r){if(q(e)||q(r)||e<=0||r<0||r>1)return m(NaN);return i;function i(u){return u>=-w(r)?NaN:g((1-r)*v(u)/(1-r*v(u)),e)}}c.exports=d
+});var F=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),N=s(),O=f();F(N,"factory",O);module.exports=N;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Evaluate the moment-generating function (MGF) for a negative binomial distribution.
-*
-* @module @stdlib/stats-base-dists-negative-binomial-mgf
-*
-* @example
-* var mgf = require( '@stdlib/stats-base-dists-negative-binomial-mgf' );
-*
-* var y = mgf( 0.05, 20.0, 0.8 );
-* // returns ~267.839
-*
-* y = mgf( 0.1, 20.0, 0.1 );
-* // returns ~9.347
-*
-* y = mgf( 0.5, 10.0, 0.4 );
-* // returns ~42822.023
-*
-* var myMGF = mgf.factory( 4.3, 0.4 );
-* y = myMGF( 0.2 );
-* // returns ~4.696
-*
-* y = myMGF( 0.4 );
-* // returns ~30.83
-*/
-
-// MODULES //
-
-var setReadOnly = require( '@stdlib/utils-define-nonenumerable-read-only-property/dist' );
-var main = require( './main.js' );
-var factory = require( './factory.js' );
-
-
-// MAIN //
-
-setReadOnly( main, 'factory', factory );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
