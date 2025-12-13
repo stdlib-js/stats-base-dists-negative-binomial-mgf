@@ -186,23 +186,18 @@ y = myMGF( 0.4 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
 var mgf = require( '@stdlib/stats-base-dists-negative-binomial-mgf' );
 
-var p;
-var r;
-var t;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var t = uniform( 10, -0.5, 0.5, opts );
+var r = uniform( 10, 0.0, 50.0, opts );
+var p = uniform( 10, 0.0, 1.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    t = (randu() * 1.0) - 0.5;
-    r = randu() * 50;
-    p = randu();
-    y = mgf( t, r, p );
-    console.log( 't: %d, r: %d, p: %d, M_X(t;r,p): %d', t, r.toFixed( 4 ), p.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 't: %0.4f, r: %0.4f, p: %0.4f, M_X(t;r,p): %0.4f', t, r, p, mgf );
 ```
 
 </section>
@@ -342,11 +337,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
@@ -392,8 +382,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/stats-base-dists-negative-binomial-mgf/tree/esm
 [esm-readme]: https://github.com/stdlib-js/stats-base-dists-negative-binomial-mgf/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/stats-base-dists-negative-binomial-mgf/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-dists-negative-binomial-mgf/main/LICENSE
 
 [mgf]: https://en.wikipedia.org/wiki/Moment-generating_function
 
