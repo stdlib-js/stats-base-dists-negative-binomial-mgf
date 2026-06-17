@@ -337,6 +337,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
@@ -382,6 +387,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/stats-base-dists-negative-binomial-mgf/tree/esm
 [esm-readme]: https://github.com/stdlib-js/stats-base-dists-negative-binomial-mgf/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/stats-base-dists-negative-binomial-mgf/blob/main/branches.md
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-dists-negative-binomial-mgf/main/LICENSE
 
 [mgf]: https://en.wikipedia.org/wiki/Moment-generating_function
 
